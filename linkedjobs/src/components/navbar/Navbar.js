@@ -11,12 +11,17 @@ class Navbar extends Component{
                 <h1 className='navbar-logo'>LinkedJobs</h1>
                 <ul className='navbar-menu'>
                     <li>
-                        <Link>Home</Link>
-                        <Link>Browse Jobs</Link>
-                        <Link>Post a Job</Link>
+                        <a>Home</a>
+                        <a>Browse Jobs</a>
+                        <a>Post a Job</a>
+                        <a>About</a>
+                        <a>About</a>
+                        <a>Contact</a>
+                        {/* <Link>Browse Jobs</Link>
+                        <Link>Post a Job</Link> */}
                         {/* <Link>News</Link> */}
-                        <Link>About</Link>
-                        <Link>Contact</Link>
+                        {/* <Link>About</Link>
+                        <Link>Contact</Link> */}
                     </li>
                 </ul>
             </nav>
