@@ -5,14 +5,19 @@ import './Navbar.css'
 
 //creating the class component
 class Navbar extends Component{
+    //implementing the burger menu functionality
+    state = {clicked: false};
+    handleClick = () => {
+        this.setState({clicked: !this.state.clicked})
+    }
 //using render because of we're extending the component
     render(){
         return(
             <nav className='navbarItems'>
                 <h1 className='navbar-logo'>LinkedJobs</h1>
-                <div className='menu-icons'>
-                    <i className='fas fa-bars'></i>
-                    <i className='fas fa-times'></i> 
+                <div className='menu-icons'onClick={this.handleClick}>
+                    {/* implementing the burger menu */}
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul className='navbar-menu'>
                     {MenuItems.map((item, index) => {
