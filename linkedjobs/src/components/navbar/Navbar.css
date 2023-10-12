@@ -1,0 +1,38 @@
+.navbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0, 30px; I cannot apply this property */
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    background-color:  #1D313C;
+    border-radius: 14px;
+    width: 95%;
+    height: 80px;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    color: #edf5e1;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: 10px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #edf5e1;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+}

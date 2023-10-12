@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { MenuItems } from './MenuItems'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -10,19 +11,29 @@ class Navbar extends Component{
             <nav className='navbarItems'>
                 <h1 className='navbar-logo'>LinkedJobs</h1>
                 <ul className='navbar-menu'>
-                    <li>
+                    {MenuItems.map((item, index) => {
+                        return(
+                           <li key={index}>
+                                <a className={item.cName} href='/'>{item.title}</a>
+                            </li> 
+                        )
+                    })}
+                    {/* <li>
                         <a>Home</a>
                         <a>Browse Jobs</a>
                         <a>Post a Job</a>
                         <a>About</a>
-                        <a>About</a>
+                        <a>News</a>
                         <a>Contact</a>
-                        {/* <Link>Browse Jobs</Link>
-                        <Link>Post a Job</Link> */}
-                        {/* <Link>News</Link> */}
-                        {/* <Link>About</Link>
-                        <Link>Contact</Link> */}
-                    </li>
+                        <a>Sing Up</a>
+
+                        <Link>Browse Jobs</Link>
+                        <Link>Post a Job</Link>
+                        <Link>News</Link>
+                        <Link>About</Link>
+                        <Link>Contact</Link>
+                        <Link>Sign Up</Link>
+                    </li> */}
                 </ul>
             </nav>
         )
