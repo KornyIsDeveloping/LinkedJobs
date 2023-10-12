@@ -65,3 +65,68 @@ button:hover {
     background-color: #F6733A;
     color: #edf5e1;
 }
+
+@media screen and (max-width: 850px) {
+    .navbarItems{
+        z-index: 99;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #1D313C;
+        position: absolute;
+        align-items: stretch;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        padding-top: 80px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 30px;
+        margin: 0;
+    } 
+    
+    .navbar-menu.active {
+        left: 0; 
+        opacity: 1;
+        z-index: -1;
+    }
+    
+    .nav-links {
+        display: block;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 1.2rem;
+    }
+
+    /* .nav-links:hover {
+        background: rgb(143, 143, 12);
+        transition: none;
+    } */
+
+    button {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #F6733A;
+        text-decoration: none;
+        color: #edf5e1;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
