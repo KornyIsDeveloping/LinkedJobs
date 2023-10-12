@@ -10,6 +10,10 @@ class Navbar extends Component{
         return(
             <nav className='navbarItems'>
                 <h1 className='navbar-logo'>LinkedJobs</h1>
+                <div className='menu-icons'>
+                    <i className='fas fa-bars'></i>
+                    <i className='fas fa-times'></i> 
+                </div>
                 <ul className='navbar-menu'>
                     {MenuItems.map((item, index) => {
                         return(
