@@ -34,6 +34,7 @@ class Navbar extends Component{
                         <Link>Contact</Link>
                         <Link>Sign Up</Link>
                     </li> */}
+                    <button>Sign Up</button>
                 </ul>
             </nav>
         )

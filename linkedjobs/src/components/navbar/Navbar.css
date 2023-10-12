@@ -22,7 +22,7 @@
 
 .navbar-menu {
     display: grid;
-    grid-template-columns: repeat(7, auto);
+    grid-template-columns: repeat(8, auto);
     grid-gap: 10px;
     align-items: center;
     list-style: none;
@@ -35,4 +35,33 @@
     color: #edf5e1;
     padding-right: 0.7rem;
     padding-left: 0.7rem;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links:hover {
+    color: aqua;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border: none;
+    white-space: nowrap; /* show the button in one line */
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #F6733A;
+    color: #edf5e1;
 }
