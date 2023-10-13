@@ -1,7 +1,11 @@
+import Navbar from '../components/navbar/Navbar'
+// import QuotesSection from '../assets/homeImage.jpg';
+
 function HomePage() {
     return(
         <>
-        <h1>This is home page</h1>
+        <Navbar/>
+        {/* <QuotesSection/> */}
         </>
     )
 }
