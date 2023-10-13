@@ -12,6 +12,10 @@
     border-radius: 14px;
     width: 95%;
     height: 80px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .navbar-logo {
@@ -64,6 +68,10 @@ button {
 button:hover {
     background-color: #F6733A;
     color: #edf5e1;
+}
+
+.menu-icons {
+    display: none;
 }
 
 @media screen and (max-width: 850px) {
@@ -128,5 +136,14 @@ button:hover {
         font-size: 1.2rem;
         font-weight: 700;
         letter-spacing: 2px;
+    }
+
+    .menu-icons {
+        display: block;
+    }
+
+    .menu-icons i {
+        font-size: 1.5rem;
+        color: #edf5e1;
     }
 }
