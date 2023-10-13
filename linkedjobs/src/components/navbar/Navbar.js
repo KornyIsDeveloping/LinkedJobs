@@ -23,26 +23,10 @@ class Navbar extends Component{
                     {MenuItems.map((item, index) => {
                         return(
                            <li key={index}>
-                                <a className={item.cName} href='/'>{item.title}</a>
+                                <Link className={item.cName} to={item.url}>{item.title}</Link>
                             </li> 
                         )
                     })}
-                    {/* <li>
-                        <a>Home</a>
-                        <a>Browse Jobs</a>
-                        <a>Post a Job</a>
-                        <a>About</a>
-                        <a>News</a>
-                        <a>Contact</a>
-                        <a>Sing Up</a>
-
-                        <Link>Browse Jobs</Link>
-                        <Link>Post a Job</Link>
-                        <Link>News</Link>
-                        <Link>About</Link>
-                        <Link>Contact</Link>
-                        <Link>Sign Up</Link>
-                    </li> */}
                     <button>Sign Up</button>
                 </ul>
             </nav>
