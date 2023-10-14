@@ -1,14 +1,22 @@
+:root {
+    --cl-primary: #12192a;
+    --cl-secondary: #F4F3EA;
+    --cl-hover: #11dfab;
+    --cl-buttons: #D3AC2B;
+
+    --cl-text: #ffffff;
+}
+
 .navbarItems {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0, 30px; I cannot apply this property */
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 30px;
     padding-left: 30px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
-    background-color:  #1D313C;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .10);
+    /* background-color:  var(--cl-primary); */
     border-radius: 14px;
     width: 95%;
     height: 80px;
@@ -21,7 +29,7 @@
 
 .navbar-logo {
     font-size: 2rem;
-    color: #edf5e1;
+    color: var(--cl-secondary);
     cursor: pointer;
 }
 
@@ -37,14 +45,14 @@
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #edf5e1;
+    color: var(--cl-primary);
     padding-right: 0.7rem;
     padding-left: 0.7rem;
     transition: 0.3s ease-in-out;
 }
 
 .nav-links:hover {
-    color: aqua;
+    color: var(--cl-hover);
     transition: all 0.2s ease-in-out;
 }
 
@@ -67,8 +75,8 @@ button {
 }
 
 button:hover {
-    background-color: #F6733A;
-    color: #edf5e1;
+    background-color: var(--cl-hover);
+    color: var(--cl-text);
 }
 
 .menu-icons {
@@ -84,7 +92,8 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: #1D313C;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .10);
+        /* background-color: var(--cl-primary); */
         position: absolute;
         align-items: stretch;
         width: 100%;
@@ -134,9 +143,9 @@ button:hover {
         margin: auto;
         border-radius: 4px;
         width: 80%;
-        background: #F6733A;
+        background: var(--cl-buttons);
         text-decoration: none;
-        color: #edf5e1;
+        color: var(--cl-text);
         font-size: 1.2rem;
         font-weight: 700;
         letter-spacing: 2px;
@@ -149,6 +158,6 @@ button:hover {
 
     .menu-icons i {
         font-size: 1.5rem;
-        color: #edf5e1;
+        color: var(--cl-secondary);
     }
 }
