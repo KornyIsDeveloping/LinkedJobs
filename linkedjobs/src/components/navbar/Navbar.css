@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
 :root {
-    --cl-primary: #12192a;
-    --cl-secondary: #F4F3EA;
-    --cl-hover: #11dfab;
+    --cl-primary: #0c1826;
+    --cl-secondary: #e5efee;
+    --cl-hover: #d83628;
     --cl-buttons: #D3AC2B;
 
     --cl-text: #ffffff;
@@ -16,7 +18,7 @@
     padding-right: 30px;
     padding-left: 30px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .10);
-    /* background-color:  var(--cl-primary); */
+    background-color:  var(--cl-primary);
     border-radius: 14px;
     width: 95%;
     height: 80px;
@@ -31,6 +33,7 @@
     font-size: 2rem;
     color: var(--cl-secondary);
     cursor: pointer;
+    letter-spacing: 2px;
 }
 
 .navbar-menu {
@@ -44,8 +47,9 @@
 .nav-links {
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--cl-primary);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--cl-secondary);
     padding-right: 0.7rem;
     padding-left: 0.7rem;
     transition: 0.3s ease-in-out;
@@ -70,6 +74,7 @@ button {
     border-radius: 0.3rem;
     font-size: 1rem;
     font-weight: 600;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -93,7 +98,7 @@ button:hover {
         flex-direction: column;
         justify-content: flex-start;
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .10);
-        /* background-color: var(--cl-primary); */
+        background-color: var(--cl-primary);
         position: absolute;
         align-items: stretch;
         width: 100%;
@@ -126,6 +131,7 @@ button:hover {
         padding-right: 0;
         padding-left: 0;
         font-size: 1.2rem;
+        letter-spacing: 1px;
     }
 
     /* .nav-links:hover {

@@ -4,7 +4,7 @@ function QuotesSection(props) {
     return(
         <>
         <div className={props.cNane}>
-            <img alt='NASA Earth' src={props.quoteImage}/>
+            <img alt='relaxing' src={props.quoteImage}/>
         </div>
         <div className='home-quote'>
             <h1>{props.quote}</h1>
