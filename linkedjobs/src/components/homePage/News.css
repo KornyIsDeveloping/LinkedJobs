@@ -49,6 +49,27 @@
     right: 0;
 }
 
+/* large desktop */
+@media screen and (min-width: 1201px) {
+    .news h1 {
+        font-size: 4rem;
+    }
+
+    /* Any other adjustments for large desktop screens */
+}
+
+/* desktop and large tablets */
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    /* Here you can adjust styles for larger tablets and standard desktop screens */
+}
+
+/* tablet and mobile landscape */
+@media screen and (min-width: 481px) and (max-width: 850px) and (orientation: landscape) {
+    /* Adjust styles specifically for landscape mode if necessary */
+}
+
+
+/* mobile */
 @media screen and (max-width: 850px) {
     .news {
         margin-top: 90%;
@@ -77,5 +98,27 @@
 
     .second-news-image img {
         height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .news {
+        margin-top: 90%;
+        margin-bottom: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .second-news {
+        margin-top: 2rem;
+    }
+
+    .second-news-text {
+        font-size: 1rem;
+    }
+
+    .second-news-image img {
+        width: 100%;
+        height: auto;
     }
 }

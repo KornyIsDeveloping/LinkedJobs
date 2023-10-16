@@ -39,7 +39,55 @@
     padding-left: 65%;
 }
 
-@media screen and (max-width: 555px) {
+/* large desktop */
+@media screen and (min-width: 1201px) {
+    .home-quote h1 {
+        font-size: 5rem;
+    }
+
+    .home-quote em {
+        font-size: 1.6rem;
+        padding-left: 75%;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    .home-quote h1 {
+        font-size: 4rem;
+    }
+
+    .home-quote em {
+        font-size: 1.4rem;
+        padding-left: 70%;
+    }
+}
+
+/* tablet and phone in landscape mode */
+@media screen and (min-width: 556px) and (max-width: 850px) {
+    .home-quote h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-quote em {
+        font-size: 1rem;
+        padding-left: 60%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 380px) {
+    .home-quote h1 {
+        font-size: 1rem;
+    }
+
+    .home-quote em {
+        font-size: 0.9rem;
+    }
+
+}
+
+/* @media screen and (max-width: 555px) {
     .home-quote h1 {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -55,4 +103,4 @@
         padding-left: 0;
         
     }
-}
+} */
