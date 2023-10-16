@@ -1,7 +1,8 @@
+import './News.css'
 import officeWork1 from '../../assets/officeWork1.jpg'
-// import officeWork2 from '../../assets/officeWork.jpg'
-// import remoteWork1 from '../../assets/officeWork.jpg'
-// import remoteWork2 from '../../assets/officeWork.jpg'
+import officeWork2 from '../../assets/officeWork2.jpg'
+// import remoteWork1 from '../../assets/remoteWork1.jpg'
+// import remoteWork2 from '../../assets/remoteWork2.jpg'
 
 const News = () => {
     return(
@@ -10,6 +11,11 @@ const News = () => {
             <p>In the office vs Remote</p>
 
             <div className="second-news">
+                <div className="second-news-image">
+                    <img alt="office work" src={officeWork1}/>
+                    <img alt="office work" src={officeWork2}/>
+                </div>
+
                 <div className="second-news-text">
                     <h2>Work in the office</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -21,9 +27,7 @@ const News = () => {
                     </p>
                 </div>
 
-                <div className="second-news-image">
-                <img alt="office work" src={officeWork1}/>
-                </div>
+
             </div>
         </div>
     )

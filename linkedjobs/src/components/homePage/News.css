@@ -1,0 +1,44 @@
+.news {
+    margin-top: 40%;
+    margin-bottom: 4rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+}
+
+.news h1 {
+    font-size: 3rem;
+}
+
+.second-news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+.second-news-text {
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+
+.second-news-text h2 {
+    padding-bottom: 1rem;
+}
+
+.second-news-image {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 50%;
+    z-index: -88;
+}
+
+.second-news-image img {
+    width: 50%;
+    width: 400px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: -1 1px 62px -18px rgba(0, 0, 0, .19);
+}
