@@ -42,3 +42,40 @@
     border-radius: 8px;
     box-shadow: -1 1px 62px -18px rgba(0, 0, 0, .19);
 }
+
+.second-news-image img:nth-child(2) {
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .news {
+        margin-top: 90%;
+        margin-bottom: 4rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .second-news {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+
+    .second-news-text {
+        width: 100%;
+    }
+
+    .second-news-image {
+        width: 100%;
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .second-news-image img {
+        height: 250px;
+    }
+}
