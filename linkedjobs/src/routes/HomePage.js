@@ -8,7 +8,7 @@ function HomePage() {
         {/* generating all of the content from QuotesSection for all the pages */}
         <QuotesSection
         cName='quote'
-        // quoteImage='https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'
+        // quoteImage='https://64.media.tumblr.com/9660e93e840e24acb4576369d487e9a3/tumblr_oj1mn4AcF51qbg3s6o1_500.png'
         quote='"I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear."'
         author='- Nelson Mandela -'
         />

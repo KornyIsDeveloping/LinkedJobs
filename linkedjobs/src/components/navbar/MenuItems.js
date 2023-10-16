@@ -24,11 +24,11 @@ export const MenuItems = [
         cName: 'nav-links'        
     },
 
-    {
-        title: 'News',
-        url: '/news',
-        cName: 'nav-links'        
-    },
+    // {
+    //     title: 'News',
+    //     url: '/news',
+    //     cName: 'nav-links'        
+    // },
 
     {
         title: 'Contact',
