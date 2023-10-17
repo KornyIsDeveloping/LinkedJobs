@@ -20,7 +20,7 @@
 }
 
 .home-quote h1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 800;
     background: var(--cl-text);
     -webkit-background-clip: text; 
@@ -35,6 +35,22 @@
     padding-left: 75%;
 }
 
+/* tablet view */
+@media (768px <= width <= 992) { 
 
+}
 
+/* desktop view */
+@media (992px <= width <= 1200px) {
 
+}
+
+/* large view */
+@media (1200px <= width <= 1400) {
+
+}
+
+/* extra large view */
+@media (1025px <= width <= 1440px) {
+    
+}

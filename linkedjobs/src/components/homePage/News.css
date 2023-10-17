@@ -23,7 +23,7 @@
 .first-news-text {
     width: 50%;
     text-align: start;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .first-news-text h2 {
@@ -40,7 +40,7 @@
 }
 
 .first-news-images img {
-    height: 350px;
+    height: 250px;
     width: 49%;
     object-fit: cover;
     border-radius: 6px;
