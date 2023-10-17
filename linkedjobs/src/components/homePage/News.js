@@ -8,15 +8,15 @@ const News = () => {
     return(
         <div className="news">
             <h1>Work Nowadays</h1>
-            <p>In the office vs Remote</p>
+            <em>In the office vs remote</em>
 
-            <div className="second-news">
-                <div className="second-news-image">
+            <div className="first-news">
+                <div className="first-news-images">
                     <img alt="office work" src={officeWork1}/>
                     <img alt="office work" src={officeWork2}/>
                 </div>
 
-                <div className="second-news-text">
+                <div className="first-news-text">
                     <h2>Work in the office</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 

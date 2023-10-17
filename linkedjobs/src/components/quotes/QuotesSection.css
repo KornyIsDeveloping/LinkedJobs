@@ -2,13 +2,7 @@
     --cl-text: #1e1e20;
 }
 
-/* img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-} */
-
+/* mobile view */
 .quote {
     width: 100%;
     height: 100vh;
@@ -18,89 +12,29 @@
 .home-quote {
     position: absolute;
     width: 100%;
-    top: 40%;
+    top: 20%;
     left: 50%;
+    padding-right: 4%;
+    padding-left: 4%;
     transform: translate(-50%, -50%);
 }
 
 .home-quote h1 {
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: 800;
     background: var(--cl-text);
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 .home-quote em {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     color: var(--cl-text);
     padding-top: 0.5rem;
     padding-bottom: 2rem;
     padding-right: 0;
-    padding-left: 65%;
+    padding-left: 75%;
 }
 
-/* large desktop */
-@media screen and (min-width: 1201px) {
-    .home-quote h1 {
-        font-size: 5rem;
-    }
 
-    .home-quote em {
-        font-size: 1.6rem;
-        padding-left: 75%;
-    }
-}
 
-/* desktop */
-@media screen and (min-width: 851px) and (max-width: 1200px) {
-    .home-quote h1 {
-        font-size: 4rem;
-    }
 
-    .home-quote em {
-        font-size: 1.4rem;
-        padding-left: 70%;
-    }
-}
-
-/* tablet and phone in landscape mode */
-@media screen and (min-width: 556px) and (max-width: 850px) {
-    .home-quote h1 {
-        font-size: 2.5rem;
-    }
-
-    .home-quote em {
-        font-size: 1rem;
-        padding-left: 60%;
-    }
-}
-
-/* mobile */
-@media screen and (max-width: 380px) {
-    .home-quote h1 {
-        font-size: 1rem;
-    }
-
-    .home-quote em {
-        font-size: 0.9rem;
-    }
-
-}
-
-/* @media screen and (max-width: 555px) {
-    .home-quote h1 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    .home-quote em {
-        font-size: 1.1rem;
-        padding-top: 0;
-        padding-bottom: 2rem;
-        padding-right: 0;
-        padding-left: 0;
-        
-    }
-} */

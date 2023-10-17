@@ -1,124 +1,54 @@
+
+/* mobile view */
 .news {
-    margin-top: 40%;
+    margin-top: 50%;
     margin-bottom: 4rem;
     margin-right: 6rem;
     margin-left: 6rem;
 }
 
 .news h1 {
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
-.second-news {
+.first-news {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 4.5rem;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-between; */
+    margin-top: 5rem;
+    width: 210%;
 }
 
-.second-news-text {
-    width: 45%;
+.first-news-text {
+    width: 50%;
     text-align: start;
     font-size: 1.1rem;
 }
 
-.second-news-text h2 {
+.first-news-text h2 {
     padding-bottom: 1rem;
 }
 
-.second-news-image {
-    display: flex;
+.first-news-images {
     position: relative;
+    display: flex;
+    width: 50%;
     justify-content: space-between;
-    width: 50%;
     z-index: -88;
+    padding-bottom: 5%;
 }
 
-.second-news-image img {
-    width: 50%;
-    width: 400px;
-    height: 360px;
+.first-news-images img {
+    height: 350px;
+    width: 49%;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: -1 1px 62px -18px rgba(0, 0, 0, .19);
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
 }
 
-.second-news-image img:nth-child(2) {
+.first-news-images img:nth-child(2) {
     position: absolute;
     top: -10%;
     right: 0;
-}
-
-/* large desktop */
-@media screen and (min-width: 1201px) {
-    .news h1 {
-        font-size: 4rem;
-    }
-
-    /* Any other adjustments for large desktop screens */
-}
-
-/* desktop and large tablets */
-@media screen and (min-width: 851px) and (max-width: 1200px) {
-    /* Here you can adjust styles for larger tablets and standard desktop screens */
-}
-
-/* tablet and mobile landscape */
-@media screen and (min-width: 481px) and (max-width: 850px) and (orientation: landscape) {
-    /* Adjust styles specifically for landscape mode if necessary */
-}
-
-
-/* mobile */
-@media screen and (max-width: 850px) {
-    .news {
-        margin-top: 90%;
-        margin-bottom: 4rem;
-        margin-right: 2rem;
-        margin-left: 2rem;
-    }
-
-    .second-news {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2.5rem;
-    }
-
-    .second-news-text {
-        width: 100%;
-    }
-
-    .second-news-image {
-        width: 100%;
-        margin-top: 1.8rem;
-        margin-bottom: 1.8rem;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .second-news-image img {
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .news {
-        margin-top: 90%;
-        margin-bottom: 3rem;
-        margin-right: 1rem;
-        margin-left: 1rem;
-    }
-
-    .second-news {
-        margin-top: 2rem;
-    }
-
-    .second-news-text {
-        font-size: 1rem;
-    }
-
-    .second-news-image img {
-        width: 100%;
-        height: auto;
-    }
 }
