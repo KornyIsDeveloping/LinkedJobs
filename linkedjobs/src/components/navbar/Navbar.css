@@ -4,10 +4,11 @@
     --cl-primary: #0c1826;
     --cl-secondary: #faf8f9;
     --cl-hover: #d83628;
-    /* --cl-buttons: #D3AC2B; */
 
     --font-size-small-device: 1rem;
     --font-size-navbar-small-device: 1.2rem;
+    --font-size-navbar-phone-device: 1.5rem;
+    --font-size-navbar-tablet-device: 1.7rem;
 }
 
 /* small devices portrait */
@@ -107,12 +108,192 @@
 
 /* phones view */
 @media (576px <= width <= 768px) {
+.navbarItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-radius: 14px;
+    margin: 20px auto 0 auto;
+    width: 95%;
+    height: 80%;
+    background-color: var(--cl-primary);
+}
 
+.navbar-logo {
+ color: var(--cl-secondary);
+ padding: 20px;
+ cursor: pointer;
+ font-size: 1.3rem;   
+ letter-spacing: 2px;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--cl-primary);
+    align-items: stretch;
+    position: absolute;
+    padding: 80px 0 30px 0;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: -100%;
+    opacity: 0;  
+    transition: 0.3s ease-in-out;
+    border-radius: 14px;
+}
+
+.navbar-menu.active {
+    left: 0;
+    opacity: 1;
+    z-index: -1; 
+}
+
+.nav-links {
+    display: block;
+    font-size: var(--font-size-navbar-phone-device);
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    width: 100%;
+    color: var(--cl-secondary);
+    transition: 0.3s ease-in-out;
+    padding: 1.5rem 0;
+}
+
+.nav-links:hover {
+    color: var(--cl-hover);
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+button {
+    display: none;
+}
+
+.nav-links-mobile {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1rem;
+    background-color: var(--cl-hover);
+    color: var(--cl-secondary);
+    font-size: var(--font-size-navbar-phone-device);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 1.5rem;
+    border-radius: 4px;
+    width: 80%;
+    margin: auto;
+}
+
+.navbarItems {
+    z-index: 88;
+}
+
+.menu-icons {
+    font-size: var(--font-size-navbar-small-device);
+    color: var(--cl-secondary);
+    cursor: pointer;
+    }
 }
 
 /* tablet view */
-@media (768px <= width <= 992) { 
+@media (768px <= width <= 992px)  { 
+    .navbarItems {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        border-radius: 14px;
+        margin: 20px auto 0 auto;
+        width: 95%;
+        height: 80%;
+        background-color: var(--cl-primary);
+    }
 
+    .navbar-logo {
+     color: var(--cl-secondary);
+     padding: 20px;
+     cursor: pointer;
+     font-size: 1.3rem;   
+     letter-spacing: 2px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: var(--cl-primary);
+        align-items: stretch;
+        position: absolute;
+        padding: 80px 0 30px 0;
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: -100%;
+        opacity: 0;  
+        transition: 0.3s ease-in-out;
+        border-radius: 14px;
+    }
+
+    .navbar-menu.active {
+        left: 0;
+        opacity: 1;
+        z-index: -1; 
+    }
+
+    .nav-links {
+        display: block;
+        font-size: var(--font-size-navbar-tablet-device);
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 1px;
+        width: 100%;
+        color: var(--cl-secondary);
+        transition: 0.3s ease-in-out;
+        padding: 1.5rem 0;
+    }
+
+    .nav-links:hover {
+        color: var(--cl-hover);
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+    }
+
+    button {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1rem;
+        background-color: var(--cl-hover);
+        color: var(--cl-secondary);
+        font-size: var(--font-size-navbar-tablet-device);
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 1.5rem;
+        border-radius: 4px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .navbarItems {
+        z-index: 88;
+    }
+
+    .menu-icons {
+        font-size: var(--font-size-navbar-small-device);
+        color: var(--cl-secondary);
+        cursor: pointer;
+    }    
 }
 
 /* desktop view */
@@ -121,7 +302,7 @@
 }
 
 /* large view */
-@media (1200px <= width <= 1400) {
+@media (1200px <= width <= 1400px) {
 
 }
 
