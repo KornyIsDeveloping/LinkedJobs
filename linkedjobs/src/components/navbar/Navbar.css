@@ -9,6 +9,7 @@
     --font-size-navbar-small-device: 1.2rem;
     --font-size-navbar-phone-device: 1.5rem;
     --font-size-navbar-tablet-device: 1.7rem;
+    --font-size-navbar-desktop-device: 1.9rem;
 }
 
 /* small devices portrait */
@@ -298,7 +299,29 @@ button {
 
 /* desktop view */
 @media (992px <= width <= 1200px) {
+    .navbarItems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        background-color: var(--cl-primary);
+        width: 95%;
+        height: 80px;
+        border-radius: 14px;
+    }
 
+    .navbar-logo {
+        color: var(--cl-secondary);
+        cursor: pointer;
+        letter-spacing: 2px;
+        font-size: var(--font-size-navbar-desktop-device);
+    }
+
+    .navbar-menu { 
+        display: grid;
+        grid-template-columns: repeat(6 auto);
+        grid-gap: 10px;
+    }
 }
 
 /* large view */
