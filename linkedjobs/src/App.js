@@ -20,7 +20,7 @@ function App() {
         <Route path='/news' element={<NewsPage/>}/>
         <Route path='/contact' element={<ContactPage/>}/> 
         </Routes>
-        <Navbar/>
+        {/* <Navbar/> */}
     </div>
   );
 }

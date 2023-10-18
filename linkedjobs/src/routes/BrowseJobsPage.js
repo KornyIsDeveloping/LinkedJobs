@@ -6,12 +6,12 @@ function BrowseJobsPage() {
         <>
         <Navbar/>
         {/* generating all of the content from QuotesSection for all the pages */}
-        <QuotesSection
+        {/* <QuotesSection
         cName='quote'
         // quoteImage={AboutImg}
         quote='"A year from now you may wish you had started today."'
         author='- Karen Lamb -'
-        />
+        /> */}
         </>
     )
 }
