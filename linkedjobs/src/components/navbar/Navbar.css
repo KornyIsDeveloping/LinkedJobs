@@ -17,7 +17,6 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 30px;
-        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
         border-radius: 14px;
         margin: 20px auto 0 auto;
         width: 95%;
@@ -37,18 +36,18 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        /* grid-template-columns: repeat(8, auto); */
         background-color: var(--cl-primary);
         align-items: stretch;
         position: absolute;
         padding: 80px 0 30px 0;
-        margin: 0;
+        margin-top: 20px;
         width: 100%;
         height: auto;
         top: 0;
         left: -100%;
         opacity: 0;  
-        
+        transition: 0.3s ease-in-out;
+        border-radius: 14px;
     }
 
     .navbar-menu.active {
@@ -70,9 +69,9 @@
     }
 
     .nav-links:hover {
-        background: var(--cl-hover);
+        color: var(--cl-hover);
         opacity: 0.5;
-        transition: 0.2s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 
     button {
@@ -83,11 +82,12 @@
         display: block;
         text-align: center;
         text-decoration: none;
-        background-color: var(--cl-secondary);
-        color: var(--cl-primary);
+        letter-spacing: 1rem;
+        background-color: var(--cl-hover);
+        color: var(--cl-secondary);
         font-size: var(--font-size-navbar-small-device);
         font-weight: 700;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         padding: 1.5rem;
         border-radius: 4px;
         width: 80%;
@@ -101,6 +101,7 @@
     .menu-icons {
         font-size: var(--font-size-navbar-small-device);
         color: var(--cl-secondary);
+        cursor: pointer;
     }
 }
 
