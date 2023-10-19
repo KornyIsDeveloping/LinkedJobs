@@ -1,63 +1,195 @@
 :root {
     --cl-text: #1e1e20;
+
+    --font-size-small-device: 1rem;
+    --font-size-text-small-device: 1.2rem;
+    --font-size-text-phone-device: 1.5rem;
+    --font-size-text-tablet-device: 1.7rem;
+    --font-size-text-desktop-device: 1.9rem;
 }
 
 /* small devices portrait */
-@media (375px <= width <= 576px) { 
+@media (min-width: 375px) and (max-width: 576px) {
     .quote {
-        width: 100%;
-        height: 100vh;
+        width: 90%;
+        height: 100%;
         position: relative;
     }
-    
+
     .home-quote {
         position: absolute;
-        width: 100%;
-        top: 20%;
+        width: 93%;
+        top: 170px;
         left: 50%;
-        padding-right: 4%;
-        padding-left: 4%;
         transform: translate(-50%, -50%);
     }
-    
+
     .home-quote h1 {
-        font-size: 1.1rem;
-        font-weight: 800;
+        font-size: var(--font-size-small-device);
         background: var(--cl-text);
-        -webkit-background-clip: text; 
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    
     .home-quote em {
-        font-size: 0.8rem;
-        color: var(--cl-text);
+        font-size: 0.7rem;
         padding-top: 0.5rem;
-        padding-bottom: 2rem;
-        padding-right: 0;
-        padding-left: 75%;
+        padding-left: 170px;
+        
     }
 }
 
 /* phones view */
-@media (576px <= width <= 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
+    .quote {
+        width: 90%;
+        height: 100%;
+        position: relative;
+    }
 
+    .home-quote {
+        position: absolute;
+        width: 93%;
+        top: 170px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-quote h1 {
+        font-size: var(--font-size-text-small-device);
+        background: var(--cl-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .home-quote em {
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+        padding-left: 290px;
+        
+    }
 }
 
 /* tablet view */
-@media (768px <= width <= 992) { 
+@media (min-width: 768px) and (max-width: 993px)  { 
+    .quote {
+        width: 90%;
+        height: 100%;
+        position: relative;
+    }
 
+    .home-quote {
+        position: absolute;
+        width: 93%;
+        top: 190px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-quote h1 {
+        font-size: var(--font-size-text-tablet-device);
+        background: var(--cl-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .home-quote em {
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 390px;
+        
+    }
 }
 
 /* desktop view */
-@media (992px <= width <= 1200px) {
+@media (min-width: 994px) and (max-width: 1200px) {
+    .quote {
+        width: 90%;
+        height: 100%;
+        position: relative;
+    }
 
+    .home-quote {
+        position: absolute;
+        width: 93%;
+        top: 210px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-quote h1 {
+        font-size: var(--font-size-text-desktop-device);
+        background: var(--cl-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .home-quote em {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+        padding-left: 590px;
+        
+    }
 }
 
 /* large view */
-@media (1200px <= width <= 1400) {
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .quote {
+        width: 90%;
+        height: 100%;
+        position: relative;
+    }
 
+    .home-quote {
+        position: absolute;
+        width: 93%;
+        top: 210px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-quote h1 {
+        font-size: var(--font-size-text-desktop-device);
+        background: var(--cl-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .home-quote em {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+        padding-left: 590px;
+        
+    }
 }
 
 /* extra large view */
-@media (1400px <= width <= 1440px) {
+@media (min-width: 1400px) and (max-width: 1900px) {
+    .quote {
+        width: 95%;
+        height: 100%;
+        position: relative;
+    }
+
+    .home-quote {
+        position: absolute;
+        width: 93%;
+        top: 210px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-quote h1 {
+        font-size: var(--font-size-text-desktop-device);
+        background: var(--cl-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     
+    .home-quote em {
+        font-size: 1.4rem;
+        padding-top: 0.5rem;
+        padding-left: 980px;
+        
+    }
 }
