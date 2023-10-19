@@ -295,7 +295,7 @@ button {
 }
 
 /* desktop view */
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 994px) and (max-width: 1200px) {
     .navbarItems {
         display: flex;
         justify-content: space-between;
@@ -318,11 +318,21 @@ button {
         display: flex; 
         grid-gap: 12px;
         list-style: none;
-        /* align-items: center; */
+        align-items: center;
+    }
+
+    .nav-links-mobile {
+        display: none;
     }
     
     button {
-        display: none;
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        border-radius: 0.3rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
     }
 
     .nav-links {
