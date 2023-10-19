@@ -87,7 +87,7 @@
         background-color: var(--cl-hover);
         color: var(--cl-secondary);
         font-size: var(--font-size-navbar-small-device);
-        font-weight: 700;
+        font-weight: 500;
         letter-spacing: 2px;
         padding: 1.5rem;
         border-radius: 4px;
@@ -181,7 +181,7 @@ button {
     background-color: var(--cl-hover);
     color: var(--cl-secondary);
     font-size: var(--font-size-navbar-phone-device);
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 2px;
     padding: 1.5rem;
     border-radius: 4px;
@@ -275,7 +275,7 @@ button {
         background-color: var(--cl-hover);
         color: var(--cl-secondary);
         font-size: var(--font-size-navbar-tablet-device);
-        font-weight: 700;
+        font-weight: 500;
         letter-spacing: 2px;
         padding: 1.5rem;
         border-radius: 4px;
@@ -330,9 +330,16 @@ button {
         white-space: nowrap;
         border-radius: 0.3rem;
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 500;
+        letter-spacing: 1px;
         border: none;
         cursor: pointer;
+        color: var(--cl-secondary);
+        background-color: var(--cl-hover);
+    }
+
+    button:hover {
+        
     }
 
     .nav-links {
