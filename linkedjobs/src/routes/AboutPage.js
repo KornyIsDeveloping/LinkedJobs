@@ -7,12 +7,12 @@ function AboutPage() {
         <>
         <Navbar/>
         {/* generating all of the content from QuotesSection for all the pages */}
-        {/* <QuotesSection
+        <QuotesSection
         cName='quote'
         // quoteImage={AboutImg}
         quote='"If you believe it will work, you will see opportunities. If you believe it would not, you will see obstacles."'
         author='- Wayne Dyer -'
-        /> */}
+        />
         </>
     )
 }

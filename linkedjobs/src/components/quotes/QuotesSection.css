@@ -26,9 +26,9 @@
 
     .home-quote h1 {
         font-size: var(--font-size-small-device);
-        background: var(--cl-text);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--cl-text);
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
     }
     
     .home-quote em {
@@ -57,9 +57,9 @@
 
     .home-quote h1 {
         font-size: var(--font-size-text-small-device);
-        background: var(--cl-text);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--cl-text);
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
     }
     
     .home-quote em {
@@ -88,9 +88,9 @@
 
     .home-quote h1 {
         font-size: var(--font-size-text-tablet-device);
-        background: var(--cl-text);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--cl-text);
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
     }
     
     .home-quote em {
@@ -119,9 +119,9 @@
 
     .home-quote h1 {
         font-size: var(--font-size-text-desktop-device);
-        background: var(--cl-text);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--cl-text);
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
     }
     
     .home-quote em {
@@ -150,9 +150,9 @@
 
     .home-quote h1 {
         font-size: var(--font-size-text-desktop-device);
-        background: var(--cl-text);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--cl-text);
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
     }
     
     .home-quote em {
@@ -181,9 +181,9 @@
 
     .home-quote h1 {
         font-size: var(--font-size-text-desktop-device);
-        background: var(--cl-text);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--cl-text);
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
     }
     
     .home-quote em {

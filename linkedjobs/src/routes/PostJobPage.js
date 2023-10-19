@@ -6,12 +6,12 @@ function PostJobPage() {
         <>
         <Navbar/>
         {/* generating all of the content from QuotesSection for all the pages */}
-        {/* <QuotesSection
+        <QuotesSection
         cName='quote'
         // quoteImage={AboutImg}
         quote='"Leadership and learning are indispensable to each other."'
         author='- John F. Kennedy -'
-        /> */}
+        />
         </>
     )
 }
