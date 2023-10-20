@@ -1,6 +1,32 @@
+:root {
+    --font-size-small-device: 1rem;
+    --font-size-text-small-device: 1.2rem;
+    --font-size-text-phone-device: 1.5rem;
+    --font-size-text-tablet-device: 1.7rem;
+    --font-size-text-desktop-device: 1.9rem;
+}
+
 /* small devices portrait */
 @media (min-width: 375px) and (max-width: 576px) {
+    .news {
+        margin: 11rem 1.9rem;        
+    }  
     
+    .news h1 {
+        font-size: var(--font-size-text-phone-device);
+    }
+
+    .news em {
+        font-size: 0.7rem;
+    }
+
+    .first-news {
+        display: flex;
+        flex-direction: column ;
+        font-size: var(--font-size-small-device);
+        text-align: left;
+        margin-top: 2.5rem;
+    }
 }
 
 /* phones view */
